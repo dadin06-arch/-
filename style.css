@@ -1,0 +1,58 @@
+/* style.css - (이전 코드를 유지하고 아래 내용 추가) */
+
+/* 파일 업로드 입력창 스타일 */
+.file-input {
+    display: block;
+    margin: 20px auto 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: var(--bg-light);
+}
+
+/* 모드 선택 버튼 그룹 스타일 */
+.mode-select-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.mode-btn {
+    background-color: var(--text-light);
+    color: var(--text-dark);
+    border: 1px solid var(--text-dark);
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: all 0.2s;
+    font-weight: 400;
+}
+
+.mode-btn.active {
+    background-color: var(--hanyang-blue);
+    color: var(--text-light);
+    border-color: var(--hanyang-blue);
+    font-weight: 600;
+}
+
+#webcam-container img {
+    border-radius: 10px;
+    border: 4px solid var(--hanyang-blue);
+    box-shadow: 0 0 12px rgba(0, 0, 128, 0.3);
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* secondary-btn 스타일 추가 (Pause 버튼 색상용) */
+.secondary-btn { 
+    background-color: var(--text-dark); 
+    color: var(--text-light);
+    box-shadow: 0 4px 10px rgba(44, 62, 80, 0.3);
+}
+.secondary-btn:hover {
+    background-color: #555c69;
+    transform: translateY(-3px) scale(1.02);
+}
